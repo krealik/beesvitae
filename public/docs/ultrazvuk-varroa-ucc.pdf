@@ -1,0 +1,249 @@
+
+
+Použitie ultrazvuku prenášaného vzduchom na kontrolu roztočov 
+Varroa destructor v úľoch 
+ 
+Brendan C. Barry Elektrotechnika a elektronika, University College Cork, Cork, Írsko 
+ 
+Pádraig M. Whelan, Fakulta biologických vied, vied o Zemi a životného prostredia, University College Cork, Cork, Írsko 
+ 
+Lindy Verstraten, Fakulta biologických vied, vied o Zemi a životného prostredia, University College Cork, Cork, Írsko 
+ 
+William M. D. Wright, Elektrotechnika a elektronika, University College Cork, Cork, Írsko, bill.wright@ucc.ie 
+ 
+Fidelma T. Butler, Fakulta biologických vied, vied o Zemi a životného prostredia, University College Cork, Cork, Írsko 
+ 
+Z anglického originálu preložil: Ing. Pavel Šintaj 
+ 
+Abstrakt - Zhoršujúci sa zdravotný stav populácií včiel medonosných (Apis mellifera) je celosvetovo znepokojujúci, 
+pretože sú pravdepodobne najdôležitejším opeľovačom. Roztoč Varroa destructor oslabuje včely konzumáciou ich 
+tukového telieska a rôzne choroby, ako napríklad vírus deformovaných krídel. Súčasné metódy kontroly roztočov 
+Varroa sú zvyčajne založené na pesticídoch s potenciálnymi vedľajšími účinkami pre včely alebo včelára a môžu 
+zanechávať zvyšky v mede alebo vosku. Roztoče si tiež môžu vyvinúť rezistenciu voči týmto pesticídom. Cieľom 
+súčasnej práce je preskúmať použitie vysokofrekvenčného, vysokointenzívneho vzduchového ultrazvuku na kontrolu 
+populácií roztočov Varroa pomocou technológie bez chemikálií. Bol skonštruovaný a testovaný prototyp 
+ultrazvukového systému, ktorý generuje vzduchové ultrazvukové vlny s rôznymi frekvenciami a intenzitami. V 
+počiatočných štúdiách sa na priame pozorovanie účinkov ultrazvuku na včely použili malé priehľadné kryty. Následne 
+sa vykonali predbežné testy v úľoch. Včelie úle s rôznou úrovňou zamorenia roztočmi Varroa boli dočasne uzavreté, 
+aby sa zabránilo pohybu včiel, a potom boli včely vo vnútri vystavené ultrazvuku. Padanie roztočov z úľa bolo 
+zaznamenávané (i) 30 minút pred, (ii) počas 30 minút vystavenia ultrazvuku a (iii) 30 minút po ošetrení ultrazvukom. 
+Včely v priehľadných teráriách vykazovali normálne správanie a zdalo sa, že ich ultrazvuk neovplyvnil. Predbežné 
+výsledky experimentov v úli naznačujú významný nárast miery padania roztočov Varroa už po 30 minútach 
+vystavenia ultrazvuku vo vnútri niektorých úľov, pričom účinok pretrváva aj po vypnutí ultrazvukového systému. 
+Dlhodobé terénne skúšky ultrazvukových systémov v úli stále prebiehajú. 
+ 
+Kľúčové slová: ultrazvuk vo vzduchu, roztoč Varroa destructor, zdravie včelieho úľa, kontrola bez chemikálií, 
+odstraňovanie roztočov 
+ 
+I. ÚVOD 
+ 
+Včely zohrávajú kľúčovú úlohu v poľnohospodárstve a rozvoji potravinárstva pri opeľovaní plodín, čo je nevyhnutné 
+pre veľké globálne poľnohospodárske ekonomiky a ľudský potravinový reťazec. Hodnota opeľovania pre svetovú 
+ekonomiku sa odhaduje na viac ako 155 miliárd eur ročne [1]. Včely sú pravdepodobne najdôležitejšou skupinou 
+opeľovačov, pričom najvýznamnejšou sú včely medonosné (Apis mellifera) [2], ale celosvetovo dochádza k poklesu 
+počtu včiel medonosných. Zatiaľ čo včelárstvo upadlo, údaje naznačujú, že počet včelích kolónií sa za posledných 50 
+rokov zvýšil o 45 % [3], ale tempo nárastu kolónií nezodpovedá tempu nárastu (300 %) plodín závislých od 
+opeľovačov [4]. V súčasnosti existuje na celom svete približne 90 miliónov včelích úľov [5], a najmenej 76 % 
+európskej produkcie potravín a 84 % pestovaných druhov zeleniny je závislých od včiel na opeľovanie [6]. Opeľovanie 
+riadenými kolóniami včiel medonosných každoročne zvyšuje hodnotu amerického poľnohospodárstva najmenej o 15 
+miliárd USD prostredníctvom zvýšených výnosov a úrody vyššej kvality [7]. Odhaduje sa tiež, že opeľovače, najmä 
+včely medonosné, prispievajú ročne do európskeho poľnohospodárskeho priemyslu najmenej 22 miliardami EUR [8]. 
+Odhaduje sa, že v USA je v súčasnosti viac ako 2,4 milióna riadených kolónií včiel medonosných, z ktorých dve tretiny 
+
+každoročne cestujú po krajine, opeľujú plodiny a produkujú med a včelí vosk. V Kalifornii sa každý rok použije viac 
+ako 1,8 milióna kolónií len na opeľovanie úrody mandlí v štáte [9]. V Európe je viac ako 13 miliónov riadených včelích 
+kolónií [10]. 
+Napriek rastúcim poznatkom o metódach včelárstva, celosvetový a lokálny presun včiel s cieľom zlepšiť produkciu 
+medu a zabezpečiť opeľovanie plodín spôsobil, že celé populácie včiel boli postihnuté množstvom škodcov a 
+patogénov, najmä roztočom Varroa destructor [11], ktorý prispieva k ničivému kolapsu kolónií (CCD), ktorého presné 
+príčiny ešte nie sú jasné. Predpokladá sa, že najmä roztoče Varroa oslabujú včely konzumáciou ich tukového telieska  
+a prenášajú ďalšie choroby, ako napríklad oslabujúci vírus deformovaných krídel (DWV), do úľov, ktoré zamorujú. 
+Rámik z úľa včiel medonosných so zakrúžkovaným roztočom Varroa je znázornený na obr. 1 
+ 
+Včelári na celom svete označili roztoče Varroa za svoj najzávažnejší problém, ktorý v súčasnosti spôsobuje straty 
+včelstiev. Súčasné metódy odstraňovania roztočov Varroa sú zvyčajne založené na pesticídoch s príslušnými 
+potenciálnymi vedľajšími účinkami pre včely (syntetické pyretroidy) alebo včelára (organické kyseliny), alebo 
+zanechávajú chemické zvyšky v mede a vosku (tymol), ktoré potom môžu buď zabrániť včelárovi ošetriť úle v 
+optimálnom čase na celkovú kontrolu roztočov Varroa (čo sa môže vyskytnúť počas plnej produkcie medu), alebo 
+môžu včelárovi zabrániť v predaji svojich produktov ako bez chemikálií. Roztoče si tiež vyvíjajú odolnosť voči týmto 
+pesticídom, čo ich nakoniec urobí neúčinnými. 
+Hlavnými cieľmi a zámermi tejto práce bolo preskúmať bezchemickú metódu kontroly roztočov Varroa založenú na 
+vysokofrekvenčných ultrazvukových vlnách prenášaných vzduchom. Predchádzajúca práca v tejto oblasti [12] sa 
+sústredila na narušenie kŕmneho cyklu roztočov Varroa v úli pomocou ultrazvukových vĺn prenášaných vzduchom s 
+frekvenciami až do 80 kHz. Tieto systémy sa však museli používať nepretržite najmenej 40 dní a mali rôznu úroveň 
+úspešnosti. Navrhovaná metóda v tejto práci spočívala vo výbere vyššej ultrazvukovej frekvencie, ktorá priamo 
+dráždila roztoče Varroa, a v použití oveľa kratšieho času expozície. 
+Prvou časťou tejto práce bolo pozorovať správanie včiel pri vystavení vysokofrekvenčným ultrazvukovým vlnám s 
+vysokou intenzitou prenášaným vzduchom. Druhou časťou tejto práce bolo vyvinúť systém v úli, ktorý by sa potom 
+mohol použiť na skúmanie účinnosti tejto techniky dlhodobej kontroly roztočov Varroa. 
+ 
+II. ZARIADENIA A EXPERIMENTY 
+ 
+A. Monitorovanie správania včiel počas aplikácie ultrazvuku 
+Počiatočné experimenty boli vykonané s cieľom zistiť, či správanie včiel bolo ovplyvnené aplikáciou ultrazvukových 
+vĺn prenášaných vzduchom. Tieto boli vykonané s použitím prototypového systému schematicky znázorneného na 
+obr. 2. Generátor ľubovoľného tvaru vlny (TTi TGA12012, Thurlby Thandar Instruments, Huntingdon, Spojené 
+kráľovstvo) bol použitý na generovanie sínusových budiacich signálov s požadovanou dĺžkou trvania a frekvenciou, 
+ktoré boli potom zosilnené pomocou vysokonapäťového zosilňovača WMA-300 (Falco Systems BV, Katwijk aan Zee, 
+Holandsko) až do 300 V medzivrcholového napätia, kombinovaného s jednosmerným predpätím 200 V z napájacieho 
+
+zdroja ESO300-0,45 (Delta Elektronika BV, ZierikZee, Holandsko) a následne odoslané do kapacitného ultrazvukového 
+vysielača Senscomp série 600 (Senscomp, Livonia, Michigan, USA). Prevodníky Senscomp majú konštrukčnú strednú 
+frekvenciu 50 kHz, ale predchádzajúce práce ukázali, že tieto zariadenia môžu pracovať na frekvenciách medzi 10 kHz 
+a 250 kHz s odhadovanou výstupnou úrovňou 64 dB a 89 dB vo vzdialenosti 0,5 m [13]. 
+Zariadenie bolo skonštruované tak, aby sa mohli súčasne používať štyri prevodníky Senscomp 600, takže výber 
+jednotlivých včiel mohol byť umiestnený do štyroch samostatných priehľadných krytov na pozorovanie ich správania 
+počas aplikácie ultrazvuku prenášaného vzduchom, ako je znázornené na obr. 3. Včely zbierajúce potravu bez peľu 
+boli zozbierané z vchodu jedného úľa a použité v pozorovacích experimentoch. Do každého krytu bolo pridané malé 
+množstvo medu na monitorovanie akéhokoľvek možného vplyvu na kŕmne správanie. Za účelom vylúčenia vplyvu 
+prítomnosti meničov ako možného mätúceho faktora boli použité ďalšie štyri priehľadné kryty obsahujúce odpojené 
+ultrazvukové meniče aby aj kontrolné včelstvá boli vystavené rovnakým podmienkam okolitého prostredia. 
+ 
+ 
+Obr. 2 Schéma pôvodného ultrazvukového prístroja použitého na experimenty s pozorovaním správania včiel. 
+ 
+Testy pozorovania správania včiel sa uskutočnili nasledovne. Po umiestnení jednotlivých včiel do priehľadných krytov 
+sa zapol ultrazvukový systém a včely sa na 3 minúty vystavili vysokointenzívnym a vysokofrekvenčným ultrazvukovým 
+vlnám. Potom sa systém na 3 minúty vypol. Tento cyklus zapnutia a vypnutia sa potom trikrát opakoval s celkovou 
+trvaním 18 minút na test. Počas 18 minút sa pomocou metód skenovania vzoriek monitorovali štyri kontrolné včely a 
+štyri exponované včely. Správanie včiel sa klasifikovalo ako čistenie srsti, chôdza, státie, lietanie alebo kŕmenie a 
+zaznamenali sa polohy včiel v krytoch (spodná, bočná alebo vrchná časť). 
+ 
+Obr. 3  Kryty používané na pozorovanie správania včiel počas ultrazvukového pôsobenia 
+ 
+B. Posúdenie účinnosti ultrazvukového pôsobenia v úli 
+Druhá séria experimentov bola navrhnutá s cieľom zistiť, či by sa dlhodobé vystavenie ultrazvuku vo vzduchu mohlo 
+použiť na ošetrenie celých úľov pomocou systému v úli, a to spočítaním počtu roztočov Varroa spadnutých na 
+základnú dosku úľa pred, počas a po sonifikácii. Bol vyvinutý prispôsobený ultrazvukový budiaci obvod, ktorý nahradil 
+stolové zariadenie z obr. 2 a ktorý bol stále schopný poskytovať identický vysokonapäťový (až 500 V) 
+vysokofrekvenčný budiaci signál spolu s jednosmerným predpätím pre meniče Senscomp 600 z jedného 
+nízkonapäťového zdroja. Zdroj jednosmerného prúdu je schematicky znázornený na obr. 4. Ako súčasť týchto 
+počiatočných experimentov bol obvod použitý na súčasné napájanie viacerých meničov Senscomp 600, čím sa vo 
+vnútri úľa vytvorilo niekoľko zdrojov vysokofrekvenčných ultrazvukových vĺn šíriacich sa vzduchom s vysokou 
+intenzitou.  
+
+ 
+Obr. 4 Schéma ultrazvukového systému do úľa vyrobeného na mieru, napájaného jedným nízkonapäťovým zdrojom 
+napájania. 
+ 
+ 
+Obr. 5   Typický národný včelí úľ používaný na testy v úli, zobrazujúci bielu základnú dosku použitú na počítanie 
+roztočov 
+ 
+Výber národných úľov obsahujúcich rámiky so zmesou včiel, plodu a medu bol utesnený, aby sa zabránilo úniku včiel, 
+a potom boli prenesené dovnútra na ultrazvukové testovanie. Biela doska pod každým úľom, ako je vidieť na obr. 5, 
+bola po presunutí úľa odstránená, vyčistená a vrátená späť. Úľ bol potom ponechaný 30 minút v pokoji, po ktorom 
+bola doska odstránená a bol zmeraný počet spadnutých roztočov na stanovenie základného počtu. Doska bola 
+potom vyčistená a vrátená späť predtým, ako bol ultrazvukový systém v úli zapnutý na 30 minút. 
+Po uplynutí tejto doby bol ultrazvukový systém vypnutý a druhé spočítanie spadnutých roztočov na doske bolo 
+vykonané po období sonifikácie. Doska bola potom vyčistená a vrátená späť pod úľ na ďalších 30 minút, po ktorých 
+raz bola hracia doska odstránená tretíkrát a vykonalo sa konečné spočítanie hodov roztočov. 
+ 
+III. VÝSLEDKY A DISKUSIA 
+ 
+A. Pozorovania správania včiel 
+Štyri kontrolné včely a štyri exponované včely boli monitorované súčasne metódou skenovania vzoriek počas 18 
+minút experimentálneho času. Zaznamenalo sa správanie a poloha včiel v teráriách. Kontrolné včely boli vystavené 
+rovnakému nastaveniu a podmienkam prostredia ako včely vystavené ultrazvuku, s rozdielom len v tom, že neboli 
+fyzicky vystavené žiadnym ultrazvukovým vlnám. 
+Výsledky správania jednotlivých včiel v reakcii na vystavenie ultrazvuku sú znázornené na obr. 6 ako percento z počtu 
+pozorovaní, n. Priemerný počet pozorovaní na včelu počas 18 minút každého testu bol 42 (± 6). Včely vystavené 
+ultrazvuku a kontrolné včely boli väčšinou pozorované pri chôdzi, po ktorej nasledovalo kŕmenie a čistenie srsti. 
+Nezdalo sa, že by boli nejaké výrazné rozdiely v správaní medzi kontrolnými včelami alebo včelami vystavenými 
+ultrazvuku. Z týchto výsledkov môžeme usúdiť, že neexistuje žiadny okamžitý významný vplyv ultrazvuku na 
+jednotlivé včely. 
+
+ 
+Obr. 6 Pozorovanie správania včiel so zapnutým ultrazvukovým systémom (n=690) a vypnutým (n=662) systémom. 
+Hodnoty predstavujú percento pozorovaní, n. 
+Poloha včiel v jednotlivých teráriách bola tiež zaznamenávaná súčasne so správaním včiel. Kontrolné aj exponované 
+včely boli pozorované prevažne na dne terárií. To môže byť spôsobené tým, že sa v každom teráriu nachádzalo malé 
+množstvo medu určeného na kŕmenie včiel. Nezdalo sa, že by sa včely vyhýbali časti terárií obsahujúcej ultrazvukové 
+meniče, a to ani vtedy, keď bol systém zapnutý. 
+ 
+B. Ultrazvuková expozícia v úli 
+Počiatočné výsledky použitia systému pre kompletné testy v úli sú znázornené na obr. 7. V dvoch úľoch (Úľ 1 a Úľ 2) 
+bol pozorovateľný vplyv na pokles roztočov, kde sa pokles roztočov počas obdobia sonifikácie výrazne zvýšil a 
+pokračoval na zvýšenej úrovni aj po vypnutí systému v porovnaní s počiatočným základným počtom. Ostatné úle však 
+vykazovali malý vplyv. Po testovaní sa zistilo, že Úľ 5 mal novú kráľovnú, ktorá ešte nezačala klásť vajíčka, takže v úli 5 
+by  sa očakávalo veľmi málo klieští Varroa. 
+Jedna hypotéza hovorí, že ultrazvukové vlny šírené vzduchom stimulujú samoošetrovanie a aloošetrovanie, pri 
+ktorom včely odstraňujú roztoče zo seba a navzájom v úli. 
+ 
+ 
+Obr. 7  Počet spadnutých roztočov z počiatočného testovania v úli v šiestich úľoch 
+ 
+Experimenty mohli ovplyvniť aj viaceré ďalšie faktory. Medzi rôznymi kolóniami včiel existuje veľká variabilita v 
+správaní; niektoré sú agresívnejšie, menej aktívne alebo hygienickejšie ako iné. Sieťka pod každým úľom môže byť 
+niekedy pokrytá propolisom a inými časticami, ktoré včely zhadzujú v rôznej miere, ako je znázornené na obr. 7. To 
+môže naznačovať, že včely sú aktívnejšie a s väčšou pravdepodobnosťou sa starajú o alo-ošetrovanie alebo sa z 
+nejakého neznámeho dôvodu snažia upchať otvory v sieťke. Vrstva propolisu môže tiež ovplyvňovať šírenie 
+ultrazvuku v úli odrážaním vzduchových vĺn, čo si zaslúži ďalšie skúmanie. 
+
+IV. ZÁVERY A BUDUCIA PRÁCA 
+ 
+Bol skonštruovaný prototyp systému na možnú kontrolu zamorenia roztočmi Varroa destructor v úľoch,  
+ktorý produkoval vysoko intenzívne vysokofrekvenčné vzduchom šírené ultrazvukové vlny. Séria experimentov,  
+v ktorých boli jednotlivé včely vystavené ultrazvuku, nepreukázala žiadny pozorovateľný alebo okamžitý účinok 
+ultrazvuku na správanie včiel. 
+Druhá séria experimentov, v ktorej systém produkoval vzduchom šírený ultrazvuk vo vnútri národných úľov  
+obsahujúcich včely s klieštikmi Varroa, priniesla sľubné počiatočné výsledky, ktoré ukázali dramatický nárast miery 
+vypadávania roztočov v niektorých testovaných úľoch. Avšak vzhľadom na inherentnú prirodzenú variabilitu 
+správania včiel a produktivity včiel medzi jednotlivými úľmi je potrebné ďalšie testovanie. Séria poľných pokusov s 
+použitím viacerých úľov obsahujúcich ultrazvukové systémy a iných spoločne umiestnených úľov bez systémov, ktoré 
+slúžia ako kontrola, stále prebieha. 
+ 
+ 
+POĎAKOVANIE 
+Autori by chceli poďakovať pánovi Timothymu Powerovi a pánovi Michaelovi O'Sheovi za zhotovenie krytov a za 
+úpravy úľov pre ultrazvukové systémy.  
+ 
+ 
+ 
+Obr. 8  Príklad propolisu pokrývajúcej sieťku úľa. Roztoče Varroa boli tiež zozbierané z povrchu vrstiev propolisu. 
+ 
+ 
+  
+
+Zoznam použitej literatúry 
+ 
+[1] N. Gallai, J-M. Salles, J. Settele a B. E. Vaissière, „Ekonomické ohodnotenie zraniteľnosti svetového 
+poľnohospodárstva v dôsledku úbytku opeľovačov“, Ecological Economics, zv. 68, č. 3, str. 810 – 821, 2009. 
+ 
+[2] B. S. F. Dias a A. Raw, Medzinárodná iniciatíva opeľovačov: Deklarácia zo São Paula o opeľovačoch: správa o 
+odporúčaniach workshopu o ochrane a udržateľnom využívaní opeľovačov v poľnohospodárstve s dôrazom na včely, 
+Brasilia: Brazílske ministerstvo životného prostredia, 1999. 
+ 
+[3] Syngenta, „Populácia včiel rastie na celom svete“, z http://www.agprofessional.com/news/bee-population-rising-
+around-world, (posledný prístup 5. októbra 2018). 
+ 
+[4] M. A. Aizen a L. D. Harder, „Globálna populácia domestikovaných včiel medonosných rastie pomalšie ako 
+poľnohospodársky dopyt po opeľovaní“, Current Biology, zv. 19, č. 11, str. 915 – 918, 2009. 
+ 
+[5] https://www.statista.com/statistics/818286/number-of-beehives-worldwide/ (posledný prístup 5. októbra 2018). 
+ 
+[6] Uznesenie Európskeho parlamentu o situácii vo včelárskom sektore“, dokument B6-0579/2008, dostupný na 
+http://www.europarl.europa.eu/sides/getDoc.do?type=MOTION&refe (posledný prístup 5. októbra 2018). 
+ 
+[7] „ARS  (Zdravie včiel a CCD, Honey Bee Health and Colony Collapse Disporder)“, Ministerstvo poľnohospodárstva 
+USA, Poľnohospodárska výskumná služba, https://www.ars.usda.gov/oc/br/ccd/index/, (posledný prístup 5. októbra 
+2018). 
+ 
+[8] Európska komisia: Politiky týkajúce sa živých zvierat – včiel medonosných, 
+http://ec.europa.eu/food/animals/live_animals/bees/index_en.htm, (posledný prístup 5. októbra 2018). 
+ 
+[9] „Včely medonosné sú opeľovače“, Americká federácia včelárov, https://www.abfnet.org/page/PollinatorFacts, 
+(posledný prístup 5. októbra 2018). 
+ 
+[10] P. Rosenkranz, P. Aumeier a B. Ziegelmann, „Biológia a kontrola klieští Varroa destructor“, Journal of 
+Invertebrate Pathology, zv. 103, str. S96 – S119, 2010 
+ 
+[11] M.-P. Chauzat, L. Cauquil, L. Roy, S. Franco, P. Hendrikx a M.Ribière-Chabert, „Demografia európskeho 
+včelárskeho priemyslu“. PLoS ONE, zv. 8, č. 11, e7901, 2013, http://dx.doi.org/10.1371/journal.pone.0079018, 
+(posledný prístup 5. októbra 2018). 
+ 
+[12] K. Rümmelin, „Metóda kontroly škodcov vo včelích kolóniách“, patent DE10161677B4, 2004 
+ 
+[13] W. Jiang a W. M. D. Wright, „Plne duplexná letecká ultrazvuková dátová komunikácia s využitím pilotne 
+podporovanej modulačnej schémy QAM-OFDM“, IEEE Trans. Ultrason. Ferroelec. Freq. Contr., zv. 63, č. 8,  
+str. 1177 – 1185, 2016  
