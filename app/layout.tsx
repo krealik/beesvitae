@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { GdprBanner } from '@/components/ui/GdprBanner'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'BeesVitae – Ochrana včiel novej generácie',
+  title: 'BeeVitae – Ochrana včiel novej generácie',
   description: 'Moderné riešenie pre zdravšie a silnejšie včelstvá. Inovatívne zariadenie na ochranu včiel pred škodcami.',
   generator: 'v0.app',
   icons: {
@@ -38,6 +39,7 @@ export default function RootLayout({
     <html lang="sk" className="bg-background">
       <body className="font-sans antialiased">
         {children}
+        <GdprBanner />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
