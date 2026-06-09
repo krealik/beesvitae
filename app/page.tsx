@@ -94,11 +94,11 @@ function HeroSection() {
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-balance leading-tight mb-6">
-          Akustická eliminácia Varroa. Bez chémie. Natrvalo.
+          BeesVitae – Koniec varroázy bez chemikálií
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-pretty">
-          Zariadenie VK30-5 vysiela presne ladenú ultrazvukovú frekvenciu priamo do úľa. 99% účinnosť overená v poľných testoch – žiadne rezíduá v mede, žiadna rezistencia.
+          Inovatívna ultrazvuková technológia na elimináciu klieštika Varroa destructor. Vedecky overená metóda, ktorá chráni včely bez použitia škodlivých chemických látok.
         </p>
 
         <Button size="lg" className="px-8 py-6 text-base" onClick={scrollToContent}>
@@ -122,7 +122,7 @@ function AboutSection() {
           <div>
             <span className="text-sm text-muted-foreground uppercase tracking-wider">O produkte</span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mt-2 mb-6 text-balance">
-              VK30-5 – akustická technológia proti Varroa destructor
+              Ultrazvuková technológia proti Varroa destructor
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               BeesVitae VK30-5 vysiela presne ladenú ultrazvukovú frekvenciu 18–28 kHz priamo z veka úľa. Akustické vlny narúšajú sací mechanizmus klieštika Varroa a bránia jeho rozmnožovaniu v zaviečkovanom plode – jedinom mieste, kde sa Varroa môže množiť. Bez potomstva populácia roztočov kolabuje.
@@ -131,7 +131,7 @@ function AboutSection() {
               Na rozdiel od chemických prípravkov nezanecháva zvuk žiadnu stopu v mede ani vosku. Roztoče si navyše nedokážu vyvinúť rezistenciu voči fyzikálnym akustickým vlnám – ide o trvalé, opakovateľné riešenie.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Jedna jednotka pokryje 5 až 15 včelstiev počas celej sezóny pri spotrebe iba 55 mA. Účinnosť 99 % bola overená vo vlastných poľných testoch.
+              Jedna jednotka pokryje 5 až 15 včelstiev počas celej sezóny.
             </p>
           </div>
 
@@ -180,8 +180,8 @@ function ProblemSection() {
     },
     {
       icon: PackageX,
-      title: "Chemické riešenia zlyhávajú",
-      description: "Syntetické pyretroidy sú toxické, organické kyseliny škodia včelárom a tymolové prípravky zanechávajú rezíduá v mede a vosku. Roztoče si navyše vyvíjajú rezistenciu.",
+      title: "Problémy s chemikáliami",
+      description: "Tradičné pesticídy majú vedľajšie účinky, zanechávajú zvyšky v mede a vosku. Roztoče si navyše vyvíjajú rezistenciu voči týmto látkam.",
     },
   ];
 
@@ -343,13 +343,13 @@ function HowItWorksSection() {
       icon: Wrench,
       step: "1",
       title: "Inštalácia do úľa",
-      description: "Jednotku VK30-5 jednoducho umiestnite do veka úľa. Nevyžaduje žiadne špeciálne úpravy a pri spotrebe 55 mA pokryje 5–15 včelstiev.",
+      description: "Zariadenie BeesVitae jednoducho umiestnite do úľa. Nevyžaduje žiadne špeciálne úpravy ani nástroje.",
     },
     {
       icon: Power,
       step: "2",
-      title: "Akustické ošetrenie",
-      description: "Zariadenie vysiela presne ladenú frekvenciu 18–28 kHz, ktorá narúša sací mechanizmus roztočov a bráni ich rozmnožovaniu v zaviečkovanom plode.",
+      title: "Ultrazvukové ošetrenie",
+      description: "Zariadenie generuje ultrazvukové vlny, ktoré dráždia roztoče Varroa a stimulujú včely k prirodzenému čistiacemu správaniu.",
     },
     {
       icon: Clock,
@@ -417,11 +417,6 @@ function ScienceSection() {
       number: "5–15",
       unit: "včelstiev",
       description: "Jedna jednotka pokryje viacero úľov počas celej sezóny",
-    },
-    {
-      number: "18–28",
-      unit: "kHz",
-      description: "Presne ladená frekvencia pri intenzite 105–113 dB SPL",
     },
   ];
 
@@ -508,19 +503,19 @@ function StudiesSection() {
 
   const keyFindings = [
     {
-      stat: "105–113",
-      label: "dB SPL intenzita",
-      description: "Signál VK30-5 výrazne prekonáva bežné akustické zariadenia (~40 dB SPL)",
+      stat: "15x",
+      label: "vyšší spad roztočov",
+      description: "Ultrazvukový spad je až 15-krát vyšší ako prirodzený spad Varroa",
     },
     {
-      stat: "8",
-      label: "nastavení frekvencie",
-      description: "Ladenie podľa stavu včelstva – konkurencia ponúka jedinú fixnú frekvenciu",
+      stat: "84%",
+      label: "anorektických roztočov",
+      description: "Väčšina spadnutých roztočov má deformovaný brušný štít - znak podvýživy",
     },
     {
-      stat: "30",
-      label: "nasadených jednotiek",
-      description: "10 predaných a 20 v aktívnom testovaní – reálne dáta z praxe",
+      stat: "81,8",
+      label: "kusov/hodinu",
+      description: "Hodinový spad Varroa pri ultrazvukovej stimulácii vs. 7,6 pri kontrolnej skupine",
     },
   ];
 
