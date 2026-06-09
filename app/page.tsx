@@ -20,6 +20,9 @@ import {
   ChevronDown,
   ExternalLink,
   CheckCircle,
+  ShoppingCart,
+  Repeat,
+  Mail,
 } from "lucide-react";
 
 function HexagonIcon({ className }: { className?: string }) {
@@ -58,6 +61,9 @@ function Header() {
           </a>
           <a href="#studie" className="text-muted-foreground hover:text-foreground transition-colors">
             Štúdie
+          </a>
+          <a href="#ziskajte" className="text-muted-foreground hover:text-foreground transition-colors">
+            Získajte zariadenie
           </a>
           <a href="#kontakt" className="text-muted-foreground hover:text-foreground transition-colors">
             Kontakt
@@ -653,6 +659,103 @@ function TargetAudienceSection() {
   );
 }
 
+function PricingSection() {
+  return (
+    <section id="ziskajte" className="py-24 px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-14">
+          <span className="text-sm text-muted-foreground uppercase tracking-wider">Ako získať zariadenie</span>
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mt-2 mb-4 text-balance">
+            Kúpa alebo prenájom – vyberáte vy
+          </h2>
+          <p className="text-muted-foreground max-w-xl mx-auto">
+            Zariadenie VK30-5 je dostupné na kúpu aj formou prenájmu. Kontaktujte nás
+            a spoločne nájdeme najvhodnejšie riešenie pre vaše včelstvo.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          {/* Kúpa */}
+          <div className="bg-card border border-border rounded-xl p-8 flex flex-col">
+            <div className="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-6">
+              <ShoppingCart className="w-7 h-7 text-accent" />
+            </div>
+            <h3 className="text-xl font-semibold mb-3">Kúpa zariadenia</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-1">
+              Jednorazová investícia do vlastného zariadenia VK30-5. Ideálne pre včelárov
+              s väčším počtom úľov alebo pre tých, ktorí chcú mať zariadenie trvale k dispozícii.
+              Súčasťou je kompletné príslušenstvo a podpora.
+            </p>
+            <ul className="space-y-2 text-sm text-muted-foreground mb-8">
+              {[
+                "Zariadenie vo vašom vlastníctve",
+                "Záruka a servisná podpora",
+                "Kompletné príslušenstvo v cene",
+                "Jednorázová platba alebo splátky",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <Button asChild className="w-full">
+              <a href="#kontakt">
+                <Mail className="w-4 h-4 mr-2" />
+                Mám záujem o kúpu
+              </a>
+            </Button>
+          </div>
+
+          {/* Prenájom */}
+          <div className="bg-card border border-accent/30 rounded-xl p-8 flex flex-col relative overflow-hidden">
+            <div className="absolute top-4 right-4 px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">
+              Flexibilné
+            </div>
+            <div className="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-6">
+              <Repeat className="w-7 h-7 text-accent" />
+            </div>
+            <h3 className="text-xl font-semibold mb-3">Prenájom zariadenia</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-1">
+              Skúste BeesVitae bez veľkej počiatočnej investície. Prenájom je vhodný pre
+              sezónne použitie, testovanie účinnosti na vašich včelstvách alebo ak
+              preferujete pravidelnú mesačnú platbu.
+            </p>
+            <ul className="space-y-2 text-sm text-muted-foreground mb-8">
+              {[
+                "Nízka vstupná investícia",
+                "Flexibilná doba prenájmu",
+                "Servis a aktualizácie zahrnuté",
+                "Možnosť odkúpenia zariadenia",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <Button asChild variant="outline" className="w-full border-accent/40 hover:border-accent">
+              <a href="#kontakt">
+                <Mail className="w-4 h-4 mr-2" />
+                Mám záujem o prenájom
+              </a>
+            </Button>
+          </div>
+        </div>
+
+        <p className="text-center text-sm text-muted-foreground mt-10">
+          Konkrétne ceny a podmienky vám radi poskytneme na základe vašich požiadaviek.
+          Napíšte nám cez{" "}
+          <a href="#kontakt" className="underline hover:text-foreground transition-colors">
+            kontaktný formulár
+          </a>
+          .
+        </p>
+      </div>
+    </section>
+  );
+}
+
 function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
@@ -734,13 +837,24 @@ function ContactSection() {
 function Footer() {
   return (
     <footer className="py-12 px-6 border-t border-border">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-2">
           <HexagonIcon className="w-6 h-6 text-accent" />
           <span className="font-semibold">BeesVitae</span>
         </div>
+        <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+          <a href="/obchodne-podmienky" className="hover:text-foreground transition-colors">
+            Obchodné podmienky
+          </a>
+          <a href="/gdpr" className="hover:text-foreground transition-colors">
+            Ochrana osobných údajov
+          </a>
+          <a href="#kontakt" className="hover:text-foreground transition-colors">
+            Kontakt
+          </a>
+        </nav>
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} BeesVitae. Všetky práva vyhradené.
+          © {new Date().getFullYear()} SofiTronic s. r. o.
         </p>
       </div>
     </footer>
@@ -760,6 +874,7 @@ export default function BeeVitaeLandingPage() {
       <ScienceSection />
       <StudiesSection />
       <TargetAudienceSection />
+      <PricingSection />
       <ContactSection />
       <Footer />
     </main>
