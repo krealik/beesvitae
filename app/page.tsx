@@ -90,15 +90,15 @@ function HeroSection() {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full text-sm text-muted-foreground mb-8">
           <HexagonIcon className="w-4 h-4 text-accent" />
-          <span>Ultrazvuková ochrana proti varroáze</span>
+          <span>Effective Frequency. Pure Honey.</span>
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-balance leading-tight mb-6">
-          BeesVitae – Koniec varroázy bez chemikálií
+          Akustická eliminácia Varroa. Bez chémie. Natrvalo.
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-pretty">
-          Inovatívna ultrazvuková technológia na elimináciu klieštika Varroa destructor. Vedecky overená metóda, ktorá chráni včely bez použitia škodlivých chemických látok.
+          Zariadenie VK30-5 vysiela presne ladenú ultrazvukovú frekvenciu priamo do úľa. 99% účinnosť overená v poľných testoch – žiadne rezíduá v mede, žiadna rezistencia.
         </p>
 
         <Button size="lg" className="px-8 py-6 text-base" onClick={scrollToContent}>
@@ -122,16 +122,16 @@ function AboutSection() {
           <div>
             <span className="text-sm text-muted-foreground uppercase tracking-wider">O produkte</span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mt-2 mb-6 text-balance">
-              Ultrazvuková technológia proti Varroa destructor
+              VK30-5 – akustická technológia proti Varroa destructor
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              BeesVitae využíva vysokofrekvenčné ultrazvukové vlny na elimináciu klieštika Varroa destructor - najväčšej hrozby pre včelstvá na celom svete. Táto revolučná metóda bola vyvinutá na základe výskumu University College Cork v Írsku.
+              BeesVitae VK30-5 vysiela presne ladenú ultrazvukovú frekvenciu 18–28 kHz priamo z veka úľa. Akustické vlny narúšajú sací mechanizmus klieštika Varroa a bránia jeho rozmnožovaniu v zaviečkovanom plode – jedinom mieste, kde sa Varroa môže množiť. Bez potomstva populácia roztočov kolabuje.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Na rozdiel od tradičných chemických metód, ultrazvuk stimuluje včely k prirodzenému čistiacemu správaniu, pri ktorom aktívne odstraňujú roztočov zo seba navzájom - bez akýchkoľvek vedľajších účinkov na včely alebo kontaminácie medu.
+              Na rozdiel od chemických prípravkov nezanecháva zvuk žiadnu stopu v mede ani vosku. Roztoče si navyše nedokážu vyvinúť rezistenciu voči fyzikálnym akustickým vlnám – ide o trvalé, opakovateľné riešenie.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Vedecké štúdie preukázali dramatický nárast vypadávania roztočov už po 30 minútach ultrazvukového ošetrenia, pričom účinok pretrváva aj po vypnutí zariadenia.
+              Jedna jednotka pokryje 5 až 15 včelstiev počas celej sezóny pri spotrebe iba 55 mA. Účinnosť 99 % bola overená vo vlastných poľných testoch.
             </p>
           </div>
 
@@ -170,18 +170,18 @@ function ProblemSection() {
   const problems = [
     {
       icon: Bug,
-      title: "Varroa destructor",
-      description: "Roztoč Varroa je označovaný včelármi celosvetovo ako najzávažnejší problém. Oslabuje včely konzumáciou ich tukového telieska a prenáša vírus deformovaných krídel (DWV).",
+      title: "Varroa destructor – príčina č. 1",
+      description: "Až 80 % strát včelstiev je priamo spôsobených klieštikom Varroa. Oslabuje včely, prenáša vírusy a bez zásahu vedie ku kolapsu celej kolónie.",
     },
     {
       icon: TrendingDown,
-      title: "Kolaps kolónií",
-      description: "Varroa prispieva k ničivému kolapsu kolónií (CCD), ktorý spôsobuje masívne straty včelstiev po celom svete a ohrozuje globálne poľnohospodárstvo.",
+      title: "56 % strát za dekádu",
+      description: "Za posledných desať rokov zaniklo 56 % včelstiev v EÚ. Úbytok včiel ohrozuje opeľovanie, potravinové systémy a biodiverzitu na celom svete.",
     },
     {
       icon: PackageX,
-      title: "Problémy s chemikáliami",
-      description: "Tradičné pesticídy majú vedľajšie účinky, zanechávajú zvyšky v mede a vosku. Roztoče si navyše vyvíjajú rezistenciu voči týmto látkam.",
+      title: "Chemické riešenia zlyhávajú",
+      description: "Syntetické pyretroidy sú toxické, organické kyseliny škodia včelárom a tymolové prípravky zanechávajú rezíduá v mede a vosku. Roztoče si navyše vyvíjajú rezistenciu.",
     },
   ];
 
@@ -192,10 +192,10 @@ function ProblemSection() {
           <div>
             <span className="text-sm text-muted-foreground uppercase tracking-wider">Problém</span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mt-2 text-balance">
-              Prečo je varroáza taký vážny problém?
+              Včely miznú. Varroa je príčina č. 1.
             </h2>
             <p className="text-muted-foreground mt-4">
-              Hodnota opeľovania včelami sa odhaduje na viac ako 155 miliárd EUR ročne. Až 84% pestovaných druhov zeleniny v Európe je závislých od včiel na opeľovanie.
+              Včelári na celom svete potrebujú riešenie, ktoré funguje bez chémie. Doterajšie chemické prípravky majú vedľajšie účinky, zanechávajú rezíduá a roztoče si voči nim vyvíjajú rezistenciu.
             </p>
           </div>
           <div className="rounded-xl overflow-hidden border border-border">
@@ -227,18 +227,18 @@ function SolutionSection() {
   const solutions = [
     {
       icon: Zap,
-      title: "Ultrazvukové vlny",
-      description: "Vysokofrekvenčné ultrazvukové vlny priamo dráždia roztoče Varroa a stimulujú včely k samoošetrovaniu a vzájomnému čisteniu.",
+      title: "Ultrazvuk z veka úľa",
+      description: "VK30-5 vysiela presne ladenú akustickú frekvenciu 18–28 kHz priamo do úľa. Signál s intenzitou 105–113 dB SPL prekonáva bežné zariadenia (~40 dB SPL).",
     },
     {
       icon: Settings,
-      title: "Vedecky overené",
-      description: "Výskum na University College Cork preukázal dramatický nárast vypadávania roztočov už po 30 minútach ultrazvukového ošetrenia.",
+      title: "Narušenie reprodukcie",
+      description: "Akustické vibrácie narúšajú sací mechanizmus roztoča a bránia jeho rozmnožovaniu v zaviečkovanom plode. Bez potomstva populácia Varroa kolabuje.",
     },
     {
       icon: Heart,
-      title: "Bezpečné pre včely",
-      description: "Testy potvrdili, že včely vystavené ultrazvuku vykazujú normálne správanie - chodia, čistia sa a kŕmia sa bez akéhokoľvek stresu.",
+      title: "Bez rezíduí, bez rezistencie",
+      description: "Zvuk nezanecháva žiadnu stopu v mede ani vosku a roztoče si nedokážu vyvinúť rezistenciu voči fyzikálnym vlnám. 99 % účinnosť overená v poľných testoch.",
     },
   ];
 
@@ -256,10 +256,10 @@ function SolutionSection() {
           <div>
             <span className="text-sm text-muted-foreground uppercase tracking-wider">Riešenie</span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mt-2 text-balance">
-              Ako ultrazvuk eliminuje Varroa?
+              Akustická eliminácia Varroa
             </h2>
             <p className="text-muted-foreground mt-4">
-              BeesVitae využíva rovnakú technológiu, akú vyvinuli vedci na University College Cork - ultrazvuk stimuluje prirodzené obranné správanie včiel.
+              BeesVitae nahrádza chémiu akustickou technológiou – roztoče sa nedokážu kŕmiť ani rozmnožovať, kolónia sa zotaví bez rezíduí a bez rizika rezistencie.
             </p>
           </div>
         </div>
@@ -343,19 +343,19 @@ function HowItWorksSection() {
       icon: Wrench,
       step: "1",
       title: "Inštalácia do úľa",
-      description: "Zariadenie BeesVitae jednoducho umiestnite do úľa. Nevyžaduje žiadne špeciálne úpravy ani nástroje.",
+      description: "Jednotku VK30-5 jednoducho umiestnite do veka úľa. Nevyžaduje žiadne špeciálne úpravy a pri spotrebe 55 mA pokryje 5–15 včelstiev.",
     },
     {
       icon: Power,
       step: "2",
-      title: "Ultrazvukové ošetrenie",
-      description: "Zariadenie generuje vysokofrekvenčné ultrazvukové vlny, ktoré dráždia roztoče a stimulujú včely k čistiacemu správaniu.",
+      title: "Akustické ošetrenie",
+      description: "Zariadenie vysiela presne ladenú frekvenciu 18–28 kHz, ktorá narúša sací mechanizmus roztočov a bráni ich rozmnožovaniu v zaviečkovanom plode.",
     },
     {
       icon: Clock,
       step: "3",
-      title: "Kontinuálna ochrana",
-      description: "Účinok pretrváva aj po vypnutí - včely pokračujú v odstraňovaní roztočov vďaka aktivovanému čistiacemu inštinktu.",
+      title: "Kolaps populácie Varroa",
+      description: "Bez potomstva populácia roztočov postupne kolabuje. Med a vosk zostávajú bez rezíduí a roztoče si nedokážu vyvinúť rezistenciu.",
     },
   ];
 
@@ -368,7 +368,7 @@ function HowItWorksSection() {
             Jednoduchý princíp, overené výsledky
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Ultrazvukové vlny stimulujú samoošetrovanie a aloošetrovanie - včely aktívne odstraňujú roztoče zo seba aj navzájom.
+            Jednoduchý princíp – akustické vlny zasahujú roztoče priamo v plode, kde sa jediné dokážu množiť. Bez reprodukcie ich populácia kolabuje.
           </p>
         </div>
 
@@ -404,24 +404,24 @@ function HowItWorksSection() {
 function ScienceSection() {
   const facts = [
     {
-      number: "155+",
-      unit: "miliárd EUR",
-      description: "Hodnota opeľovania včelami pre svetovú ekonomiku ročne",
-    },
-    {
-      number: "84%",
-      unit: "plodín",
-      description: "Európskych pestovaných druhov zeleniny závislých od včiel",
-    },
-    {
-      number: "30",
-      unit: "minút",
-      description: "Stačí na dramatický nárast vypadávania roztočov z úľa",
+      number: "99%",
+      unit: "účinnosť",
+      description: "Overená vo vlastných poľných testoch zariadenia VK30-5",
     },
     {
       number: "0",
-      unit: "chemikálií",
-      description: "Žiadne vedľajšie účinky ani kontaminácia medu",
+      unit: "rezíduí",
+      description: "Žiadna kontaminácia medu, vosku ani stres pre včely",
+    },
+    {
+      number: "5–15",
+      unit: "včelstiev",
+      description: "Jedna jednotka pokryje viacero úľov počas celej sezóny",
+    },
+    {
+      number: "18–28",
+      unit: "kHz",
+      description: "Presne ladená frekvencia pri intenzite 105–113 dB SPL",
     },
   ];
 
@@ -434,7 +434,7 @@ function ScienceSection() {
             Overené výskumom, potvrdené praxou
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            Technológia BeesVitae vychádza z výskumu realizovaného na University College Cork v Írsku. Vedci preukázali, že vysokofrekvenčné ultrazvukové vlny prenášané vzduchom efektívne kontrolujú populácie roztočov Varroa bez akéhokoľvek negatívneho vplyvu na včely.
+            Akustický efekt na klieštika Varroa potvrdil už v roku 2018 výskum Rainera Krügera. Prvý prototyp VK30-5 postavil zakladateľ Pavel Šintaj v roku 2022 a odvtedy ho priebežne testuje vo vlastných včelstvách. Vysokofrekvenčné akustické vlny efektívne potláčajú populáciu roztočov bez negatívneho vplyvu na včely.
           </p>
         </div>
 
@@ -458,10 +458,10 @@ function ScienceSection() {
           </div>
           <div className="bg-secondary/50 rounded-xl p-8">
             <blockquote className="text-lg italic text-muted-foreground">
-              &quot;Predbežné výsledky experimentov v úli naznačujú významný nárast miery padania roztočov Varroa už po 30 minútach vystavenia ultrazvuku, pričom účinok pretrváva aj po vypnutí ultrazvukového systému.&quot;
+              &quot;Akustický signál narúša sací mechanizmus roztoča a bráni jeho reprodukcii v zaviečkovanom plode. Bez potomstva populácia Varroa kolabuje – bez chémie, bez rezíduí a bez rizika rezistencie.&quot;
             </blockquote>
             <p className="text-sm text-muted-foreground mt-4">
-              — Výskum University College Cork, Írsko
+              — Princíp technológie VK30-5, BeesVitae
             </p>
           </div>
         </div>
@@ -508,19 +508,19 @@ function StudiesSection() {
 
   const keyFindings = [
     {
-      stat: "15x",
-      label: "vyšší spad roztočov",
-      description: "Ultrazvukový spad je až 15-krát vyšší ako prirodzený spad Varroa",
+      stat: "105–113",
+      label: "dB SPL intenzita",
+      description: "Signál VK30-5 výrazne prekonáva bežné akustické zariadenia (~40 dB SPL)",
     },
     {
-      stat: "84%",
-      label: "anorektických roztočov",
-      description: "Väčšina spadnutých roztočov má deformovaný brušný štít - znak podvýživy",
+      stat: "8",
+      label: "nastavení frekvencie",
+      description: "Ladenie podľa stavu včelstva – konkurencia ponúka jedinú fixnú frekvenciu",
     },
     {
-      stat: "81,8",
-      label: "kusov/hodinu",
-      description: "Hodinový spad Varroa pri ultrazvukovej stimulácii vs. 7,6 pri kontrolnej skupine",
+      stat: "30",
+      label: "nasadených jednotiek",
+      description: "10 predaných a 20 v aktívnom testovaní – reálne dáta z praxe",
     },
   ];
 
@@ -579,23 +579,23 @@ function StudiesSection() {
           <ul className="space-y-3 text-muted-foreground text-sm">
             <li className="flex items-start gap-3">
               <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-              <span>Ultrazvukové vlny narušujú výživový mechanizmus roztočov - rozkmitávajú ich sacie ústrojenstvo</span>
+              <span>Akustické vlny narúšajú sací mechanizmus roztočov – nedokážu sa kŕmiť na včelách ani larvách</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-              <span>Stimulovaný roztoč sa stáva oscilátorom, ktorý dráždi včelu k hygienickému správaniu (VSH)</span>
+              <span>Vibrácie bránia rozmnožovaniu Varroa v zaviečkovanom plode – jedinom mieste, kde sa môže množiť</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-              <span>Včely agresívne odstraňujú parazitov - spôsobujú im trvalé poškodenia končatín a štítov</span>
+              <span>Bez potomstva populácia roztočov postupne kolabuje, čím sa kolónia zotaví</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-              <span>Metóda je aplikovateľná vo všetkých fázach vývoja včelstva bez vplyvu na produktivitu</span>
+              <span>Zvuk nezanecháva žiadne rezíduá v mede ani vosku – ošetrenie je bezpečné pre včely aj včelára</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-              <span>Mladé včely (mladušky) útočia na roztoče ešte pred vylíhnutím z buňky</span>
+              <span>Roztoče si nedokážu vyvinúť rezistenciu voči fyzikálnym akustickým vlnám – riešenie funguje dlhodobo</span>
             </li>
           </ul>
         </div>

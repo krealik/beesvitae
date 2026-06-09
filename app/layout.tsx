@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'BeeVitae – Ochrana včiel novej generácie',
-  description: 'Moderné riešenie pre zdravšie a silnejšie včelstvá. Inovatívne zariadenie na ochranu včiel pred škodcami.',
+  title: 'BeesVitae – Effective Frequency. Pure Honey.',
+  description: 'Akustická eliminácia klieštika Varroa. Bez chémie, bez rezíduí, bez rezistencie. Ultrazvukové zariadenie VK30-5 s 99% účinnosťou overenou v poľných testoch.',
   generator: 'v0.app',
   icons: {
     icon: [
