@@ -88,9 +88,9 @@ function HeroSection() {
         <img
           src="/images/hero-bees.jpg"
           alt="Včely na pláste"
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/20 to-background" />
       </div>
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
