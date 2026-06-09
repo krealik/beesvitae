@@ -762,12 +762,32 @@ function ContactSection() {
     email: "",
     message: "",
   });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Ďakujeme za vašu správu! Čoskoro vás budeme kontaktovať.");
-    setFormData({ name: "", email: "", message: "" });
+    setStatus("loading");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Neznáma chyba.");
+      }
+
+      setStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (err: unknown) {
+      setStatus("error");
+      setErrorMsg(err instanceof Error ? err.message : "Nepodarilo sa odoslať správu.");
+    }
   };
 
   return (
@@ -784,50 +804,69 @@ function ContactSection() {
         </div>
 
         <form onSubmit={handleSubmit} className="bg-card border border-border rounded-lg p-8 space-y-6">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
-                Meno
-              </label>
-              <Input
-                id="name"
-                type="text"
-                placeholder="Vaše meno"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                required
-              />
+          {status === "success" ? (
+            <div className="text-center py-8">
+              <CheckCircle className="w-12 h-12 text-accent mx-auto mb-4" />
+              <h3 className="text-lg font-medium mb-2">Správa odoslaná!</h3>
+              <p className="text-muted-foreground text-sm">Ďakujeme, ozveme sa vám čo najskôr.</p>
+              <Button variant="outline" className="mt-6" onClick={() => setStatus("idle")}>
+                Odoslať ďalšiu správu
+              </Button>
             </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
-                E-mail
-              </label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="vas@email.sk"
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                required
-              />
-            </div>
-          </div>
-          <div>
-            <label htmlFor="message" className="block text-sm font-medium mb-2">
-              Správa
-            </label>
-            <Textarea
-              id="message"
-              placeholder="Napíšte nám vašu správu..."
-              rows={5}
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              required
-            />
-          </div>
-          <Button type="submit" size="lg" className="w-full">
-            Odoslať správu
-          </Button>
+          ) : (
+            <>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                    Meno
+                  </label>
+                  <Input
+                    id="name"
+                    type="text"
+                    placeholder="Vaše meno"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    required
+                    disabled={status === "loading"}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                    E-mail
+                  </label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="vas@email.sk"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    required
+                    disabled={status === "loading"}
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  Správa
+                </label>
+                <Textarea
+                  id="message"
+                  placeholder="Napíšte nám vašu správu..."
+                  rows={5}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  required
+                  disabled={status === "loading"}
+                />
+              </div>
+              {status === "error" && (
+                <p className="text-sm text-destructive">{errorMsg}</p>
+              )}
+              <Button type="submit" size="lg" className="w-full" disabled={status === "loading"}>
+                {status === "loading" ? "Odosielam..." : "Odoslať správu"}
+              </Button>
+            </>
+          )}
         </form>
       </div>
     </section>
